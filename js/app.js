@@ -1,5 +1,6 @@
 $(document).ready(function() {
 	$('#button').click(function() {
+		$('.results').empty();
 		var number = $("#num").val();
 		for (var i = 1; i <= number; i++) {
 			if ( i % 15 === 0) {
@@ -11,8 +12,9 @@ $(document).ready(function() {
 			} else {
 				$('.results').append(i + '<br/>');
 			}
+
+
 		};
 	});
-
 
 });
